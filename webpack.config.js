@@ -6,6 +6,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
     "mode": "development",
     "target": "es5",
+    "devtool": "source-map",
     "entry": {
         "main": {
             "import": "./src/main.ts",
