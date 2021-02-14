@@ -7,7 +7,6 @@ import Vue from "vue";
 import Vuex from "vuex";
 import VueRouter from "vue-router";
 import Vuetify from "vuetify";
-import VuetifyColors from "vuetify/lib/util/colors";
 
 import App from "/src/App.vue";
 import DefaultLayout from "/src/layouts/Default.vue";
@@ -23,18 +22,7 @@ new Vue({
     "render": h => h(App),
     "vuetify": new Vuetify({
         "theme": {
-            "dark": true,
-            "themes": {
-                "light": {
-                    "primary": VuetifyColors.lightGreen,
-                    "secondary": VuetifyColors.deepOrange,
-                    "accent": VuetifyColors.lime,
-                    "error": VuetifyColors.pink,
-                    "warning": VuetifyColors.yellow,
-                    "info": VuetifyColors.cyan,
-                    "success": VuetifyColors.indigo
-                }
-            }
+            "dark": true
         }
     }),
     "router": new VueRouter({
