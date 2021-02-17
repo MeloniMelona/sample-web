@@ -11,10 +11,28 @@
             </v-list-item>
             <v-divider></v-divider>
             <v-list dense nav>
+                <v-list-item to="/apis">
+                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>API</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item to="/menus">
+                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Menu</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-list-item to="/people">
+                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Person</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
                 <v-list-item to="/users">
                     <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
                     <v-list-item-content>
-                        <v-list-item-title>Users</v-list-item-title>
+                        <v-list-item-title>User</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>

@@ -11,7 +11,10 @@ import Vuetify from "vuetify";
 import App from "/src/App.vue";
 import DefaultLayout from "/src/layouts/Default.vue";
 import BlankLayout from "/src/layouts/Blank.vue";
-import UserMainPage from "/src/pages/users/main.vue";
+import ApiMainPage from "/src/pages/api/main.vue";
+import MenuMainPage from "/src/pages/menu/main.vue";
+import PersonMainPage from "/src/pages/person/main.vue";
+import UserMainPage from "/src/pages/user/main.vue";
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
@@ -32,6 +35,18 @@ new Vue({
                 "path": "/",
                 "component": DefaultLayout,
                 "children": [
+                    {
+                        "path": "/apis",
+                        "component": ApiMainPage
+                    },
+                    {
+                        "path": "/menus",
+                        "component": MenuMainPage
+                    },
+                    {
+                        "path": "/people",
+                        "component": PersonMainPage
+                    },
                     {
                         "path": "/users",
                         "component": UserMainPage
