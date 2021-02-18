@@ -5,7 +5,7 @@ const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
     "mode": "development",
-    "target": "es5",
+    "target": ["web", "es5"],
     "devtool": "source-map",
     "entry": {
         "main": {
@@ -23,7 +23,9 @@ module.exports = {
         "rules": [
             {
                 "test": /\.(js|ts)$/,
-                "exclude": /node_modules/,
+                "include": [
+                    path.resolve(__dirname, "src")
+                ],
                 "use": [
                     {
                         "loader": "babel-loader",
