@@ -11,6 +11,7 @@ import Vuetify from "vuetify";
 import App from "/src/App.vue";
 import DefaultLayout from "/src/layouts/Default.vue";
 import BlankLayout from "/src/layouts/Blank.vue";
+import DashboardMainPage from "/src/pages/dashboard/main.vue";
 import ApiMainPage from "/src/pages/api/main.vue";
 import MenuMainPage from "/src/pages/menu/main.vue";
 import PersonMainPage from "/src/pages/person/main.vue";
@@ -33,8 +34,13 @@ new Vue({
         "routes": [
             {
                 "path": "/",
+                "redirect": "/dashboard",
                 "component": DefaultLayout,
                 "children": [
+                    {
+                        "path": "/dashboard",
+                        "component": DashboardMainPage
+                    },
                     {
                         "path": "/apis",
                         "component": ApiMainPage

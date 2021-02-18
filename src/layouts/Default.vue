@@ -11,20 +11,26 @@
             </v-list-item>
             <v-divider></v-divider>
             <v-list dense nav>
+                <v-list-item to="/dashboard">
+                    <v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Dashboard</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
                 <v-list-item to="/apis">
-                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-icon><v-icon>mdi-api</v-icon></v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>API</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item to="/menus">
-                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-icon><v-icon>mdi-dots-vertical</v-icon></v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>Menu</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item to="/people">
-                    <v-list-item-icon><v-icon>mdi-account</v-icon></v-list-item-icon>
+                    <v-list-item-icon><v-icon>mdi-account-box</v-icon></v-list-item-icon>
                     <v-list-item-content>
                         <v-list-item-title>Person</v-list-item-title>
                     </v-list-item-content>
