@@ -48,7 +48,9 @@
             <v-toolbar-title>Application</v-toolbar-title>
         </v-app-bar>
         <v-main>
-            <router-view></router-view>
+            <v-fade-transition hide-on-leave>
+                <router-view></router-view>
+            </v-fade-transition>
         </v-main>
     </v-app>
 </template>
